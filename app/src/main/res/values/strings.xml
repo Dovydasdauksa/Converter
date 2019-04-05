@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">My Crazy Converter</string>
+    <string name="input_number_text">Input number (cm)</string>
+    <string name="convert_button_text">Convert</string>
+    <string name="reset_button_text">Reset</string>
+    <string name="kilometre">Kilometre</string>
+    <string name="kilometre_result">00.00</string>
+    <string name="centimetre">Centimetre</string>
+    <string name="centimetre_result">00.00</string>
+    <string name="mile">Mile</string>
+    <string name="mile_result">00.00</string>
+    <string name="yard">Yard</string>
+    <string name="yard_result">00.00</string>
+    <string name="foot">Foot</string>
+    <string name="foot_result">00.00</string>
+    <string name="name_surname">Name Surname</string>
+</resources>

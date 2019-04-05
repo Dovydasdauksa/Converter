@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+   <TextView
+       android:id="@+id/appName"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="@string/app_name"
+       style="@style/AppNameTheme"/>
+
+    <EditText
+        android:id="@+id/inputNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/InputNumberTheme"
+        android:autofillHints=""
+        android:inputType="number"
+        android:hint="@string/input_number_text"
+        android:layout_marginTop="@dimen/input_number_margin_top"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/input_number_margin_top">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/dialog_holo_light_frame"
+            android:layout_weight="1"
+            android:layout_marginStart="@dimen/margin_screen_dimen"
+            android:layout_marginEnd="@dimen/margin_space_between_buttons_dimen">
+
+            <Button
+                android:id="@+id/convertButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/convert_button_text"
+                android:background="@android:color/holo_green_light" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/dialog_holo_light_frame"
+            android:layout_weight="1"
+            android:layout_marginEnd="@dimen/margin_screen_dimen"
+            android:layout_marginStart="@dimen/margin_space_between_buttons_dimen">
+
+            <Button
+                android:id="@+id/resetButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/reset_button_text"
+                android:background="@android:color/holo_orange_light" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/dialog_holo_light_frame"
+        android:layout_marginStart="@dimen/margin_screen_dimen"
+        android:layout_marginEnd="@dimen/margin_screen_dimen"
+        android:layout_marginTop="@dimen/result_box_margin_top">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_green_light">
+
+            <TableRow
+                android:layout_marginTop="@dimen/space_between_table_row">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/kilometre"
+                    android:layout_column="1"
+                    android:gravity="left"
+                    android:layout_marginStart="@dimen/table_row_margin_start"
+                    style="@style/ResultsTextTheme"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:id="@+id/kilometreResult"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/kilometre_result"
+                    android:layout_column="2"
+                    android:gravity="center"
+                    android:layout_marginStart="@dimen/table_row_margin_start"
+                    style="@style/ResultsTextTheme"
+                    android:layout_weight="1"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="@dimen/space_between_table_row">
+
+                <TextView
+                    style="@style/ResultsTextTheme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_marginStart="@dimen/table_row_margin_start"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="@string/centimetre" />
+
+                <TextView
+                    android:id="@+id/centimetreResult"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/centimetre_result"
+                    android:layout_column="2"
+                    android:gravity="center"
+                    android:layout_marginStart="@dimen/table_row_margin_start"
+                    style="@style/ResultsTextTheme"
+                    android:layout_weight="1"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="@dimen/space_between_table_row">
+
+                <TextView
+                    style="@style/ResultsTextTheme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_marginStart="@dimen/table_row_margin_start"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="@string/mile" />
+
+                <TextView
+                    android:id="@+id/mileResult"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mile_result"
+                    android:layout_column="2"
+                    android:gravity="center"
+                    android:layout_marginStart="@dimen/table_row_margin_start"
+                    style="@style/ResultsTextTheme"
+                    android:layout_weight="1"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="@dimen/space_between_table_row">
+
+                <TextView
+                    style="@style/ResultsTextTheme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_marginStart="@dimen/table_row_margin_start"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="@string/yard" />
+
+                <TextView
+                    android:id="@+id/yardResult"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/yard_result"
+                    android:layout_column="2"
+                    android:gravity="center"
+                    android:layout_marginStart="@dimen/table_row_margin_start"
+                    style="@style/ResultsTextTheme"
+                    android:layout_weight="1"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="@dimen/space_between_table_row"
+                android:layout_marginBottom="@dimen/space_between_table_row">
+
+                <TextView
+                    style="@style/ResultsTextTheme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_marginStart="@dimen/table_row_margin_start"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="@string/foot" />
+
+                <TextView
+                    android:id="@+id/footResult"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/foot_result"
+                    android:layout_column="2"
+                    android:gravity="center"
+                    android:layout_marginStart="@dimen/table_row_margin_start"
+                    style="@style/ResultsTextTheme"
+                    android:layout_weight="1"/>
+            </TableRow>
+        </TableLayout>
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/name_surname"
+        style="@style/ResultsTextTheme"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/result_box_margin_top"/>
+
+</LinearLayout>

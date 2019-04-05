@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="input_number_margin_top">40dp</dimen>
+    <dimen name="margin_screen_dimen">10dp</dimen>
+    <dimen name="margin_space_between_buttons_dimen">30dp</dimen>
+    <dimen name="result_box_margin_top">15dp</dimen>
+    <dimen name="table_row_margin_start">52dp</dimen>
+    <dimen name="space_between_table_row">10dp</dimen>
+</resources>
